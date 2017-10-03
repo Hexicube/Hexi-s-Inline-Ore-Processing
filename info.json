@@ -1,0 +1,11 @@
+{
+  "name": "Hexi_Inline_Ore_Processing",
+  "version": "0.4.0",
+  "title": "Hexi's Inline Ore Processing",
+  "author": "Hexicube",
+  "contact": "",
+  "homepage": "",
+  "dependencies": ["base >= 0.15.0"],
+  "factorio_version": "0.15",
+  "description": "Adds optional extra steps to ore processing that increases yield."
+}

@@ -1,0 +1,79 @@
+-- TIER 1 --
+The basic yield improvement method. Easy to set up, reasonable gains, and low complexity.
+
+Enrichment:
+- 5x [X] Ore + 5 Seconds = 6x [X] Refined Ore
+
+1.2x Yield
+
+1 Enrichment
+
+
+
+-- TIER 2 --
+An extension to the basic method. Same concept, but you're dealing with a 4:3 ratio.
+
+Crushing:
+- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+
+Enrichment:
+- 3x [X] Crushed Ore + 5 Seconds = 4x [X] Refined Ore
+
+1.6x Yield
+
+3 Crusher + 4 Enrichment
+
+
+
+-- TIER 3 --
+Water is now a requirement.
+
+Crushing:
+- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+
+Cleaning:
+- 3x [X] Crushed Ore + 1x Water + 1.25 Seconds = 3x [X] Clean Ore
+
+Enrichment:
+- 3x [X] Clean Ore + 5 Seconds = 5x [X] Refined Ore
+
+2x Yield
+
+3 Crusher + 1 Cleaner + 4 Enrichment
+
+
+
+-- TIER 4 --
+Acid is now a requirement. Multiple fluids are now needed (including the ore itself), but this gives the absolute best yield.
+Ratios are a bit nicer, however Crystallization only accepts 2 modules due to its size.
+
+Crushing:
+- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+
+Cleaning:
+- 3x [X] Crushed Ore + 1x Water + 1.25 Seconds = 3x [X] Clean Ore
+
+Liquidation:
+- 3x [X] Clean Ore + 0.1 Sulphuric Acid + 5 Second = 5x [X] Ore Slurry
+
+Crystallization:
+- 4x [X] Ore Slurry + 10 Seconds = 4x [X] Ore Crystal
+
+Enrichment:
+- 2x [X] Ore Crystal + 5 Seconds = 3x [X] Refined Ore
+
+2.5x Yield
+
+3 Crusher + 1 Cleaner + 4 Liquidation + 10 Crystallization (15 with all speed modules) + 10 Enrichment
+
+
+
+-- ADVANCED CLEANING --
+Instead of using water to clean ore, light oil can be used instead to increase yield by 20% for tiers 3 and 4.
+This takes much longer to do (messing with ratios for those stages), and thereby massively increases power/space demands.
+This also results in a byproduct, which can be directly converted into stone.
+
+Advanced Cleaning:
+- 5x [X] Crushed Ore + 0.25x Light Oil + 11.25 Seconds = 6x [X] Clean Ore + 1x Stone
+
+Whilst this would increase tier 3 to 2.4x Yield, it's far more efficient to jump to tier 4 for 2.5x Yield with less power draw and less oil usage and then use this on tier 4 for 3x Yield.
