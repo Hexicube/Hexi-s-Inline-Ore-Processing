@@ -201,11 +201,11 @@ data:extend(
         {
             filename = "__Hexi_Inline_Ore_Processing__/graphics/crusher.png",
             priority = "high",
-            width = 768,
-            height = 1024,
+            width = 512,
+            height = 512,
             frame_count = 1,
-            scale = 1 / 6, --should be 1/8 but was rendered as a 3x3 instead of 4x4
-            shift = {0, 0}
+            scale = 3 / 8,
+            shift = {.85, -0.1}
         }
     },
     {
