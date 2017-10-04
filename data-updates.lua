@@ -160,7 +160,8 @@ function add_ore_recipes(ore_type, plate_type, image_ore, image_plate, image_fol
             results =
             {
                 {name=ore_type.."-cleaned", amount=6},
-                {name="stone", amount=1}
+                {name="stone", amount=1, probability=0.75},
+                {name="coal", amount=1, probability=0.05}
             },
             main_product = "",
             icon = image_ore,
