@@ -144,7 +144,7 @@ data:extend(
     {
         type = "item",
         name = "hexi-crushing-building",
-        icon = "__base__/graphics/icons/electric-furnace.png",
+        icon = "__Hexi_Inline_Ore_Processing__/graphics/crusher_icon.png",
         flags = {"goes-to-quickbar"},
         subgroup = "hexi-processing-machine",
         order = "b",
@@ -154,7 +154,7 @@ data:extend(
     {
         type = "furnace",
         name = "hexi-crushing-building",
-        icon = "__base__/graphics/icons/electric-furnace.png",
+        icon = "__Hexi_Inline_Ore_Processing__/graphics/crusher_icon.png",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "hexi-crushing-building"},
         max_health = 150,
@@ -199,13 +199,27 @@ data:extend(
         },
         animation =
         {
-            filename = "__Hexi_Inline_Ore_Processing__/graphics/crusher.png",
+            filename = "__Hexi_Inline_Ore_Processing__/graphics/crusher_LR.png",
             priority = "high",
-            width = 512,
-            height = 512,
-            frame_count = 1,
-            scale = 3 / 8,
-            shift = {.85, -0.1}
+            width = 256,
+            height = 256,
+            frame_count = 64,
+            line_length = 8,
+            animation_speed = 1,
+            scale = 3 / 4,
+            shift = {.85, -0.1},
+            hr_version =
+            {
+                filename = "__Hexi_Inline_Ore_Processing__/graphics/crusher_HR.png",
+                priority = "high",
+                width = 512,
+                height = 512,
+                frame_count = 64,
+                line_length = 8,
+                animation_speed = 1,
+                scale = 3 / 8,
+                shift = {.85, -0.1}
+            }
         }
     },
     {
@@ -256,7 +270,8 @@ data:extend(
                 pipe_covers = pipecoverspictures(),
                 base_area = 2.5,
                 base_level = -1,
-                pipe_connections = {{ type="input", position = {0, 3} }}
+                pipe_connections = {{ type="input", position = {0, 3} }},
+                filter = "water" --coming in 0.16
             },
             off_when_no_fluid_recipe = false
         },
@@ -347,7 +362,8 @@ data:extend(
                 pipe_covers = pipecoverspictures(),
                 base_area = 1,
                 base_level = -1,
-                pipe_connections = {{ type="input", position = {0, 3} }}
+                pipe_connections = {{ type="input", position = {0, 3} }},
+                filter = "light-oil" --coming in 0.16
             },
             off_when_no_fluid_recipe = false
         },
@@ -360,7 +376,7 @@ data:extend(
         },
         allowed_effects = {"consumption", "speed", "pollution"},
         crafting_categories = {"hexi-cleaning-advanced"},
-        result_inventory_size = 2,
+        result_inventory_size = 3,
         crafting_speed = 1,
         energy_usage = "800kW",
         source_inventory_size = 1,
@@ -457,13 +473,13 @@ data:extend(
         crafting_categories = {"hexi-liquidating"},
         result_inventory_size = 0,
         crafting_speed = 1,
-        energy_usage = "125kW",
+        energy_usage = "300kW",
         source_inventory_size = 1,
         energy_source =
         {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions = 2.5 / 125
+            emissions = 2.5 / 300
         },
         vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
         working_sound =
@@ -537,7 +553,7 @@ data:extend(
     {
         type = "item",
         name = "hexi-crystal-building",
-        icon = "__base__/graphics/icons/electric-furnace.png",
+        icon = "__Hexi_Inline_Ore_Processing__/graphics/crystal_icon.png",
         flags = {"goes-to-quickbar"},
         subgroup = "hexi-processing-machine",
         order = "e",
@@ -547,7 +563,7 @@ data:extend(
     {
         type = "furnace",
         name = "hexi-crystal-building",
-        icon = "__base__/graphics/icons/electric-furnace.png",
+        icon = "__Hexi_Inline_Ore_Processing__/graphics/crystal_icon.png",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "hexi-crystal-building"},
         max_health = 150,
@@ -598,13 +614,13 @@ data:extend(
         crafting_categories = {"hexi-crystal"},
         result_inventory_size = 1,
         crafting_speed = 1,
-        energy_usage = "50kW",
+        energy_usage = "125kW",
         source_inventory_size = 0,
         energy_source =
         {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions = 0.5 / 50
+            emissions = 0.5 / 125
         },
         vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
         working_sound =

@@ -2,11 +2,19 @@
 The basic yield improvement method. Easy to set up, reasonable gains, and low complexity.
 
 Enrichment:
-- 5x [X] Ore + 5 Seconds = 6x [X] Refined Ore
+- 5x [X] Ore + 4 Seconds = 6x [X] Refined Ore
 
 1.2x Yield
 
+Ratio:
 1 Enrichment
+1.25ore/s -> 1.5ore/s
+32 sets for blue belt input
+80 sets for 3 blue belt output
+
+Yellow belt processing:
+11 Enrichment
+~860kW
 
 
 
@@ -14,14 +22,24 @@ Enrichment:
 An extension to the basic method. Same concept, but you're dealing with a 4:3 ratio.
 
 Crushing:
-- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+- 5x [X] Ore + 6 Seconds = 6x [X] Crushed Ore
 
 Enrichment:
-- 3x [X] Crushed Ore + 5 Seconds = 4x [X] Refined Ore
+- 3x [X] Crushed Ore + 4 Seconds = 4x [X] Refined Ore
 
 1.6x Yield
 
-3 Crusher + 4 Enrichment
+Ratio:
+3 Crusher
+4 Enrichment
+2.5ore/s -> 4ore/s
+16 sets for blue belt input
+10 sets for blue belt output
+
+Yellow belt processing:
+17 Crusher
+23 Enrichment
+~3.6MW
 
 
 
@@ -29,17 +47,29 @@ Enrichment:
 Water is now a requirement.
 
 Crushing:
-- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+- 5x [X] Ore + 5 Seconds = 6x [X] Crushed Ore
 
 Cleaning:
-- 3x [X] Crushed Ore + 1x Water + 1.25 Seconds = 3x [X] Clean Ore
+- 3x [X] Crushed Ore + 1x Water + 2 Seconds = 3x [X] Clean Ore
 
 Enrichment:
-- 3x [X] Clean Ore + 5 Seconds = 5x [X] Refined Ore
+- 3x [X] Clean Ore + 4 Seconds = 5x [X] Refined Ore
 
-2x Yield
+2x/2.4x Yield
 
-3 Crusher + 1 Cleaner + 4 Enrichment
+Ratio:
+3 Crusher
+2 Cleaner
+4 Enrichment
+2.5ore/s -> 5ore/s
+16 sets for blue belt input
+8 sets for blue belt output
+
+Yellow belt processing:
+17 Crusher
+11 Cleaner
+22 Enrichment
+~7.8MW
 
 
 
@@ -48,32 +78,62 @@ Acid is now a requirement. Multiple fluids are now needed (including the ore its
 Ratios are a bit nicer, however Crystallization only accepts 2 modules due to its size.
 
 Crushing:
-- 5x [X] Ore + 7.5 Seconds = 6x [X] Crushed Ore
+- 5x [X] Ore + 5 Seconds = 6x [X] Crushed Ore
 
 Cleaning:
-- 3x [X] Crushed Ore + 1x Water + 1.25 Seconds = 3x [X] Clean Ore
+- 3x [X] Crushed Ore + 25x Water + 2 Seconds = 3x [X] Clean Ore
+- 5x [X] Crushed Ore + 5x Light Oil + 7 Seconds = 6x [X] Clean Ore + 50% Stone + 5% Coal
 
 Liquidation:
-- 3x [X] Clean Ore + 0.1 Sulphuric Acid + 5 Second = 5x [X] Ore Slurry
+- 3x [X] Clean Ore + 0.1 Sulphuric Acid + 4 Second = 50x [X] Ore Slurry
 
 Crystallization:
-- 4x [X] Ore Slurry + 10 Seconds = 4x [X] Ore Crystal
+- 10x [X] Ore Slurry + 2 Seconds = 1x [X] Ore Crystal
 
 Enrichment:
-- 2x [X] Ore Crystal + 5 Seconds = 3x [X] Refined Ore
+- 4x [X] Ore Crystal + 8 Seconds = 5x [X] Refined Ore
 
-2.5x Yield
+2.5x/3x Yield
 
-3 Crusher + 1 Cleaner + 4 Liquidation + 10 Crystallization (15 with all speed modules) + 10 Enrichment
+Ratio:
+3 Crusher
+2 Cleaner
+4 Liquidation
+10 Crystallization (15 with all speed modules)
+10 Enrichment
+2.5ore/s -> 6.25ore/s
+16 sets for blue belt input
+32 sets for 5 blue belt output
+
+Advanced ratio:
+3 Crusher
+7 Cleaner
+4.8 Liquidation
+12 (18) Crystallization
+12 Enrichment
+2.5ore/s -> 7.5ore/s
+16 sets for blue belt input
+16 sets for 3 blue belt output
+
+Yellow belt processing:
+?
+
+Yellow belt processing with advanced cleaning and speed 3s:
+7 Crusher
+8 Advanced Cleaner
+9 Liquidation
+32 Crystallization
+22 Enrichment
+~51MW
 
 
 
 -- ADVANCED CLEANING --
-Instead of using water to clean ore, light oil can be used instead to increase yield by 20% for tiers 3 and 4.
-This takes much longer to do (messing with ratios for those stages), and thereby massively increases power/space demands.
-This also results in a byproduct, which can be directly converted into stone.
+Instead of using water to clean ore, light oil can be used with a better cleaning machine to increase yield by 20% for tiers 3 and 4.
+The recipe is slow, it produces byproducts randomly, and uses more power and pollution.
+The change in output also messes up ratios (4.8 liquidation + 12/18 crystal + 12 enrich / 4.8 enrich), to the point where using an imperfect ratio is preferable (4.8 becomes 5 instead of 5x the machines).
 
 Advanced Cleaning:
-- 5x [X] Crushed Ore + 0.25x Light Oil + 11.25 Seconds = 6x [X] Clean Ore + 1x Stone
+- 5x [X] Crushed Ore + 5x Light Oil + 7 Seconds = 6x [X] Clean Ore + 50% Stone + 5% Coal
 
 Whilst this would increase tier 3 to 2.4x Yield, it's far more efficient to jump to tier 4 for 2.5x Yield with less power draw and less oil usage and then use this on tier 4 for 3x Yield.

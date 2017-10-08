@@ -5,7 +5,7 @@ data:extend({
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech1.png",
 		unit =
 		{
-			count = 100,
+			count = 75,
 			ingredients =
 			{
 				{"science-pack-1", 1}
@@ -26,13 +26,13 @@ data:extend({
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech2.png",
 		unit =
 		{
-			count = 250,
+			count = 200,
 			ingredients =
 			{
 				{"science-pack-1", 1},
 				{"science-pack-2", 1}
 			},
-			time = 30
+			time = 20
 		},
 		prerequisites = {"hexi-oretech-tier1", "advanced-material-processing"},
 		effects = {
@@ -55,7 +55,7 @@ data:extend({
 				{"science-pack-2", 1},
 				{"science-pack-3", 1}
 			},
-			time = 45
+			time = 30
 		},
 		prerequisites = {"hexi-oretech-tier2", "advanced-material-processing-2"},
 		effects = {
@@ -108,7 +108,7 @@ data:extend({
 				{"production-science-pack", 1},
 				{"high-tech-science-pack", 1}
 			},
-			time = 60
+			time = 45
 		},
 		prerequisites = {"hexi-oretech-tier3", "advanced-electronics-2"},
 		effects = {
