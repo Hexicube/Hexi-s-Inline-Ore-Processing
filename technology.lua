@@ -3,6 +3,7 @@ data:extend({
 		type = "technology",
 		name = "hexi-oretech-tier1",
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech1.png",
+        icon_size = 128,
 		unit =
 		{
 			count = 75,
@@ -24,6 +25,7 @@ data:extend({
 		type = "technology",
 		name = "hexi-oretech-tier2",
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech2.png",
+        icon_size = 128,
 		unit =
 		{
 			count = 200,
@@ -46,6 +48,7 @@ data:extend({
 		type = "technology",
 		name = "hexi-oretech-tier3",
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech3.png",
+        icon_size = 128,
 		unit =
 		{
 			count = 500,
@@ -69,6 +72,7 @@ data:extend({
 		type = "technology",
 		name = "hexi-oretech-tier4",
 		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech4.png",
+        icon_size = 128,
 		unit =
 		{
 			count = 1200,
@@ -96,7 +100,8 @@ data:extend({
     {
 		type = "technology",
 		name = "hexi-oretech-tier3a",
-		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech4.png",
+		icon = "__Hexi_Inline_Ore_Processing__/graphics/tech3.png",
+        icon_size = 128,
 		unit =
 		{
 			count = 500,

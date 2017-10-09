@@ -74,7 +74,7 @@ function add_ore_recipes(ore_type, plate_type, image_ore, image_plate, image_fol
         {
             type = "item",
             name = ore_type.."-crystal",
-            icon = image_ore,
+            icon = "__Hexi_Inline_Ore_Processing__/graphics/materials/"..image_folder.."/crystal.png",
             flags = {"goes-to-main-inventory"},
             subgroup = "hexi-ore-recipes-4",
             order = "zz2",
@@ -217,7 +217,7 @@ function add_ore_recipes(ore_type, plate_type, image_ore, image_plate, image_fol
             result = ore_type.."-crystal",
             result_count = 1,
             main_product = "",
-            icon = image_ore,
+            icon = "__Hexi_Inline_Ore_Processing__/graphics/materials/"..image_folder.."/crystal.png",
             subgroup = "hexi-ore-recipes-4",
             order = "b",
             hidden = not show_recipes
